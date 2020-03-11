@@ -1,0 +1,196 @@
+body
+{
+height:100%;
+margin: 0;
+padding: 0;
+  font-family: sans-serif;
+}
+
+.imagen
+{
+  position: relative;
+height: 1000px;
+  overflow: hidden;
+  background: url(../imagenes/electro.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.container
+{
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: none;
+
+
+
+}
+.container .box
+{
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(500px - 30px);
+  background: #343432;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px -0px 500px 0px black;
+}
+
+.container .box .icon
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #151514;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.container .box:hover .icon
+{
+  top: 60px;
+  left:  calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .box .icon .icono
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s;
+  width: 300px;
+  height: 300px;
+}
+.container .box:hover .icon .icono
+{
+width:150px;
+height: 150px;
+}
+
+
+
+.container .box .content
+{
+  position:absolute;
+  left: 20px;
+  top: 100%;
+  height: calc(100%-100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+
+}
+.container .box:hover .content
+{
+    opacity: 1;
+    top: 35%;
+
+}
+.container .box .content h3
+{
+
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+.container .box .content p
+{
+
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.container .box:nth-child(2) .icon
+{
+  background:#ffffff;
+}
+.container .box:nth-child(2)
+{
+  background:#cccccc;
+}
+.container .box .content form
+{
+  top: 40px;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+}
+
+
+
+
+.container .box .content .form .fa
+{
+font-size: 30px;
+color: #ffffff;
+float: left;
+text-align: left;
+}
+.container .box .content .form .text
+{
+  text-align: center;
+
+  border:none;
+  background: none;
+  width: 90%;
+  height: 40px;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+
+}
+.container .box .content .form .password
+{
+  top: 20px;
+  text-align: center;
+  border:none;
+  background: none;
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.container .box .content .form .submit
+{
+  width: 100%;
+  height: 35px;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  font-size: 25px;
+  font-weight: 300px;
+  border-radius: 12px;
+}
+.container .box .content .form .submit:hover
+{
+  width: 100%;
+  height: 35px;
+  background: #f0f0f0;
+  color: #151514;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  font-size: 25px;
+  font-weight: 300px;
+  border-radius: 12px;
+}
